@@ -20,7 +20,7 @@ from fastapi import FastAPI, HTTPException, Query
 
 from fastapi.middleware.cors import CORSMiddleware
 
-
+from fastapi.middleware.cors import CORSMiddleware
 
 # ============================================================
 
@@ -302,6 +302,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
+    
 
     title="Zephyr AI Weather Intelligence API",
 
@@ -313,6 +314,20 @@ app = FastAPI(
 
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "ok",
+        "service": "Zephyr AI Backend"
+    }
 
 
 app.add_middleware(
