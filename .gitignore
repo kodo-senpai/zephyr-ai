@@ -1,0 +1,16 @@
+# Python virtual environment
+backend/.venv/
+
+# Environment variables / API keys
+backend/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
