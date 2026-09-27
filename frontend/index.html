@@ -400,6 +400,28 @@
    ========================================================== */
 .phase74-section{margin-top:16px}.phase74-panel{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:16px;padding:15px;box-shadow:var(--shadow-sm)}.phase74-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}.phase74-title{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700}.phase74-sub{color:var(--muted);font-size:9px;margin-top:3px;line-height:1.5}.phase74-status{font-size:8px;color:#0870ca;background:var(--accent-soft);padding:5px 8px;border-radius:999px;font-weight:800;white-space:nowrap}.phase74-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:10px}.phase74-card{background:rgba(248,251,254,.92);border:1px solid var(--line);border-radius:14px;padding:13px}.phase74-card-title{font-family:"Space Grotesk",sans-serif;font-size:11px;font-weight:700;margin-bottom:8px}.phase74-summary{font-size:11px;line-height:1.65;color:#41566c}.phase74-summary strong{color:#173b55}.phase74-events{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.phase74-event{border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px}.phase74-event-icon{font-size:17px}.phase74-event-title{font-size:9px;font-weight:800;margin-top:5px;color:#173b55}.phase74-event-time{font-size:8px;color:#62758a;margin-top:3px}.phase74-event-detail{font-size:8px;color:#71869a;line-height:1.45;margin-top:5px}.phase74-event.empty{grid-column:1/-1;text-align:center;color:#71869a;padding:16px}.phase74-list{margin:0;padding-left:17px;color:#41566c;font-size:9px;line-height:1.7}.phase74-foot{margin-top:10px;font-size:8px;color:#8292a3}@media(max-width:900px){.phase74-grid{grid-template-columns:1fr}}@media(max-width:560px){.phase74-events{grid-template-columns:1fr}.phase74-head{flex-direction:column}}
 
+
+/* ZEPHYR V3 — MOBILE-FIRST PREMIUM SPACING */
+@media (max-width:700px){
+ body{background:linear-gradient(180deg,#f7fbff 0%,#edf5fb 100%);padding-bottom:78px}
+ .topbar{height:68px;padding:0 14px}.brand{gap:9px}.brand-logo{width:38px;height:38px;border-radius:12px}.brand h1{font-size:14px;letter-spacing:.08em;white-space:nowrap}.brand p,.sync-button{display:none}.status{padding:7px 9px;font-size:9px}
+ .layout{display:block;min-height:auto}.sidebar{display:none}.main{padding:14px 12px 30px;min-width:0}
+ .toolbar{display:block;margin-bottom:12px}.toolbar h2{font-size:21px}.toolbar p{font-size:9px}.toolbar-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;margin-top:13px}.location-search{min-width:0}.search-row{display:grid;grid-template-columns:minmax(0,1fr) 66px 42px;gap:6px}#locationSearch{width:100%;height:42px;border-radius:12px}.search-button,.location-button{height:42px;border-radius:12px}.location-button{width:auto}.data-badge{height:42px;border-radius:12px;padding:0 9px;font-size:8px}.search-results{top:49px;right:0}
+ .map-wrapper{height:auto;min-height:0;overflow:visible;border:0;border-radius:20px;background:transparent;box-shadow:none}#map{height:360px;border:1px solid #d5e4ee;border-radius:20px;overflow:hidden;box-shadow:0 14px 35px rgba(34,63,92,.12)}.map-overlay{top:12px;left:12px;padding:9px 11px;border-radius:12px;max-width:72%}.map-overlay-title{font-size:10px}.map-overlay-sub{font-size:8px}.leaflet-control-zoom{display:none}
+ /* Radar becomes a separate card below the map on phones instead of covering it. */
+ .radar-control{position:relative;top:auto;right:auto;width:100%;margin:12px 0 0;padding:16px;border-radius:18px;background:rgba(255,255,255,.97);box-shadow:0 10px 30px rgba(34,63,92,.10);z-index:2}
+ .radar-control-head{align-items:center}.radar-title{font-size:15px}.radar-actions{grid-template-columns:repeat(3,1fr);gap:7px}.radar-actions .radar-action:last-child{grid-column:1/-1}.radar-action{min-height:40px;font-size:9px}.radar-options{gap:12px}.radar-legend{margin-top:12px}
+ .radar-attribution{position:relative;left:auto;bottom:auto;display:inline-block;margin:8px 0 0 2px;font-size:8px}
+ .weather-layer-dock{position:relative!important;left:auto!important;bottom:auto!important;width:100%!important;margin:12px 0 0!important;padding:13px!important;border-radius:18px!important}.dock-title{font-size:11px!important}.dock-sub{font-size:8px!important}.weather-layer-buttons{display:flex!important;overflow-x:auto!important;gap:7px!important;padding:2px 1px 4px!important;scrollbar-width:none;-webkit-overflow-scrolling:touch}.weather-layer-buttons::-webkit-scrollbar{display:none}.weather-layer-btn{flex:0 0 auto!important;white-space:nowrap!important;min-height:36px!important}
+ .visual-layer-legend{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:100%!important;margin:10px 0 0!important;border-radius:16px!important}
+ .location-panel{display:flex;flex-direction:column;gap:10px;margin-top:12px}.panel{border-radius:17px;padding:15px}.location-name{font-size:17px}.condition{font-size:10px;min-height:auto}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.metric{padding:12px;border-radius:13px}.metric-value{font-size:17px}
+ .forecast-panel,.forecast-24h-panel,.phase74-panel{overflow:hidden}.forecast-grid,.daily-grid{display:flex!important;overflow-x:auto!important;grid-template-columns:none!important;gap:8px!important;padding-bottom:6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.forecast-grid::-webkit-scrollbar,.daily-grid::-webkit-scrollbar{display:none}.forecast-card,.daily-card{flex:0 0 122px!important;min-width:122px!important}
+ .forecast-24h-section,.phase74-section,.intelligence-section,.risk-section,.ai-section{margin-top:12px!important}.forecast-24h-head,.phase74-head,.ai-head{display:block}.forecast-24h-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.phase74-grid{grid-template-columns:1fr!important}.phase74-events{grid-template-columns:1fr!important}.ai-form{grid-template-columns:1fr!important}.ai-ask{height:42px}.ai-suggestions{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.ai-suggestions::-webkit-scrollbar{display:none}.ai-chip{flex:0 0 auto}
+ .ux-mobile-dock{position:fixed!important;left:10px!important;right:10px!important;bottom:10px!important;height:58px!important;z-index:3000!important;border:1px solid rgba(203,217,230,.95)!important;border-radius:18px!important;background:rgba(255,255,255,.94)!important;box-shadow:0 14px 35px rgba(34,63,92,.16)!important;backdrop-filter:blur(18px)!important;display:grid!important;grid-template-columns:repeat(5,1fr)!important;padding:5px!important;gap:3px!important}
+ .ux-mobile-dock button{border:0!important;background:transparent!important;border-radius:13px!important;color:#71869a!important;font-size:8px!important;font-weight:800!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important}.ux-mobile-dock button span{font-size:15px!important;line-height:1}.ux-mobile-dock button.active{background:#eaf6ff!important;color:#147eea!important}
+}
+@media(max-width:390px){.main{padding-left:9px;padding-right:9px}.brand h1{font-size:12px}.status{font-size:8px}.toolbar-actions{grid-template-columns:1fr}.data-badge{width:max-content;justify-self:start;padding:0 12px}#map{height:330px}.radar-control{padding:14px}.radar-options{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}}
+
 </style>
 
 <body>
@@ -1175,6 +1197,7 @@
     // ========================================================
 
     const API_BASE = "https://zephyr-ai.onrender.com";
+
 
     // ========================================================
     // MAP
@@ -3737,6 +3760,15 @@
     document.getElementById('aiQuestion')?.addEventListener('keydown', event => { if (event.key === 'Enter') askZephyr(); });
 
 </script>
+
+
+<nav class="ux-mobile-dock" aria-label="Quick navigation">
+  <button type="button" class="active" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span>⌂</span>Overview</button>
+  <button type="button" onclick="document.querySelector('.radar-control')?.scrollIntoView({behavior:'smooth',block:'center'})"><span>◉</span>Radar</button>
+  <button type="button" onclick="document.querySelector('.seven-day-section')?.scrollIntoView({behavior:'smooth',block:'start'})"><span>▥</span>Forecast</button>
+  <button type="button" onclick="document.querySelector('.phase74-section')?.scrollIntoView({behavior:'smooth',block:'start'})"><span>✦</span>Intel</button>
+  <button type="button" onclick="document.querySelector('.ai-section')?.scrollIntoView({behavior:'smooth',block:'start'})"><span>◌</span>AI</button>
+</nav>
 
 </body>
 </html>
